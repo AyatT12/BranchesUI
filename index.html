@@ -10,7 +10,7 @@
     <title>كدي</title>
     <meta name="description" content="">
     <meta name="keywords" content="بنان, خيار لإدارة شركات و مكاتب تأجير السيارات">
-    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="icon" type="image/png" href="img/CompanyLogo_20240325231449.png">
     <!-- ========================= CSS here ========================= -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Cairo:500,400,700" rel="stylesheet">
@@ -31,8 +31,8 @@
     <header class="header">
         <div class="navbar-area">
             <!-- Topbar -->
-            <nav class="navbar navbar-expand navbar-light topbar mb-2 static-top shadow  justify-content-between"
-                style="height:90px">
+            <nav class="navbar navbar-expand navbar-light topbar mb-1 static-top   justify-content-between"
+                style="height:80px">
                 <!-- Topbar -->
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ">
@@ -175,16 +175,35 @@
                             &#x627;&#x644;&#x631;&#x626;&#x64A;&#x633;&#x64A; </p>
                     </div>
                     <img class="extra-small-mobile " src="img/CompanyLogo_20240325231449.png"
-                        style="height: 60px;width: 140px;">
+                        style="height: 60px;">
                 </div>
             </nav>
         </div>
     </header>
-    <div class="wrapper flex-grow-1 d-flex align-items-center ">
+      
+    <div class="wrapper flex-grow-1 d-flex align-items-center flex-column ">
+         <!-- Alerts -->
+       <div class="container-fluid mb-1">
+        <div class="row">
+            <div class="col-12 d-flex flex-column gap-1 w-100">
+                <nav class="warnings navbar-expand-lg navbar-light py-2" id="warnings">
+                <div class="marquee">
+                    <div class="marquee-content">
+                    <p>الشركة موقوفة, تم تقليص بعض الخدمات </p>
+                    <p>الخدمة مؤقتة حاليًا بسبب التحديثات</p>
+                    <p>يرجى التواصل مع الدعم الفني في حالة الطوارئ</p>
+                    <p>الشركة موقوفة, تم تقليص بعض الخدمات</p>
+                    </div>
+                </div>
+                <i  class="fa-regular fa-circle-xmark marquee-xmark" id="marquee-xmark"></i>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- --- -->
         <div class="container-fluid ">
             <!-- Content Row -->
             <section class="section-mainCard home-section">
-
                 <div class="row justify-content-center w-100 main-row ">
                     <!--  Chart -->
                     <div class=" col-lg-12 col-xl-8">
@@ -3017,12 +3036,12 @@
                 </path>
             </svg>
         </div>
-        <div class="container footer-buttons justify-content-center py-3" style="box-sizing: border-box; ">
+        <div class="container footer-buttons justify-content-center py-1" style="box-sizing: border-box; ">
             <div class="row  footer-buttons-row">
                 <!-- First row of buttons -->
                 <div class="col-md-4 col-lg-3 ">
-                    <a type="button"   href="https://ayatt12.github.io/SavedContracts/"  class="btn btn-Pages mb-2"><img src="img/Rectangle 35.png">
-                       العقود المحفوظة </a>
+                    <a type="button"   class="btn btn-Pages mb-2"><img src="img/Rectangle 35.png">
+                        إلغاء العقد</a>
                 </div>
                 <div class="col-md-4 col-lg-3  ">
                     <a type="button" href="https://ayatt12.github.io/extension/" class="btn btn-Pages mb-2"><img src="img/Rectangle 31.png">
@@ -3215,7 +3234,14 @@
 
     <script src="js/javascript/scripts.js"></script>
     <script src="js/javascript/charts.js"></script>
+    <script>
+        MarqueeXmark = document.getElementById("marquee-xmark");
+        warnings = document.getElementById("warnings");
 
+        MarqueeXmark.addEventListener('click',function(){
+        warnings.style.display="none"
+        })
+    </script>
    
 </body>
 
