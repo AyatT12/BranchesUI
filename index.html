@@ -183,24 +183,27 @@
       
     <div class="wrapper flex-grow-1 d-flex align-items-center flex-column ">
          <!-- Alerts -->
-       <div class="container-fluid mb-1">
-        <div class="row">
-            <div class="col-12 d-flex flex-column gap-1 w-100">
-                <nav class="warnings navbar-expand-lg navbar-light py-2" id="warnings">
-                <div class="marquee">
-                    <div class="marquee-content">
-                   <p> الشركة موقوفة, تم تقليص بعض الخدمات  <i class="fa-solid fa-circle-exclamation"></i></p> 
-                    <p>الخدمة مؤقتة حاليًا بسبب التحديثات   <i class="fa-solid fa-circle-exclamation"></i></p>
-                    <p>يرجى التواصل مع الدعم الفني في حالة الطوارئ   <i class="fa-solid fa-circle-exclamation"></i></p>
-                    <p>الشركة موقوفة, تم تقليص بعض الخدمات  <i class="fa-solid fa-circle-exclamation"></i></p>
+       <div class="col">
+        <div class="container-fluid mb-1">
+            <div class="row">
+                <div class="col-12 d-flex flex-column gap-1 w-100">
+                    <nav class="warnings navbar-expand-lg navbar-light py-2" id="warnings">
+                    <div class="marquee">
+                        <div class="marquee-content">
+                       <p> الشركة موقوفة, تم تقليص بعض الخدمات  <i class="fa-solid fa-circle-exclamation"></i></p> 
+                        <p>الخدمة مؤقتة حاليًا بسبب التحديثات   <i class="fa-solid fa-circle-exclamation"></i></p>
+                        <p>يرجى التواصل مع الدعم الفني في حالة الطوارئ   <i class="fa-solid fa-circle-exclamation"></i></p>
+                        <p>الشركة موقوفة, تم تقليص بعض الخدمات  <i class="fa-solid fa-circle-exclamation"></i></p>
+                        </div>
                     </div>
+                    <i  class="fa-regular fa-circle-xmark marquee-xmark" id="marquee-xmark"></i>
+                    </nav>
                 </div>
-                <i  class="fa-regular fa-circle-xmark marquee-xmark" id="marquee-xmark"></i>
-                </nav>
             </div>
         </div>
-    </div>
+       </div>
     <!-- --- -->
+       <div class="col">
         <div class="container-fluid ">
             <!-- Content Row -->
             <section class="section-mainCard home-section">
@@ -228,28 +231,21 @@
 
                                         <div class="col-md-6 card-col pieChart-col">
                                             <div class="row ">
-                                                <div class="col-sm-8 col-md-8 col-lg-7 col-xl-8 pieChart  ">
+                                                <div class="col-12 pieChart-data">
+                                                    <div class="chart-legend" style="line-height: normal;">
+                                                        <p class="chart-p">
+                                                            <span>32</span>   : العقود القائمة 
+                                                        </p>
+                                                        <p class="chart-p">
+                                                            <span>2</span>   : العقود المغلقة 
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 pieChart">
                                                     <canvas id="pieChart" aria-label="chart"></canvas>
 
                                                 </div>
-
-                                                <div class="col-sm-4 col-md-4 col-lg-5 col-xl-4 pieChart-data">
-                                                    <div class="chart-legend">
-                                                        <table class="chart-p">
-                                                            <tr>
-                                                                <td id="Executed-contracts">2000</td>
-                                                                <td>: العقود المنفذة</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td id="Closed-contracts">5000</td>
-                                                                <td>: العقود المغلقة</td>
-                                                            </tr>
-                                                        </table>
-                                                        <br>
-                                                        <br>
-
-                                                    </div>
-                                                </div>
+                                                
                                             </div>
                                         </div>
 
@@ -3023,6 +3019,7 @@
                 <!-- buttons  -->
             </section>
         </div>
+       </div>
     </div>
 
     <!-- Start Footer Area -->
