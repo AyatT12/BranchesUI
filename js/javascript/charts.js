@@ -105,10 +105,12 @@ function getCountByVersion(dataIndex) {
 //pieChart
 const pieChartEl = document.getElementById('pieChart');
 const pieChartData = {
-  labels: ['العقود المنتهية', ' تنتهي اليوم', ' تنتهي غدا', 'تنتهي لاحقا'],
+  labels: ['منتهيه',' تنتهي اليوم',  ' تنتهي غدا', 'تنتهي لاحقا'],
   datasets: [{
     data: [342, 313, 245, 210],
-    backgroundColor: ['rgba(242, 143, 36, 1)', '#9966FF', 'rgba(242, 36, 36, 1)', 'rgba(1, 5, 83, 1)']
+    backgroundColor: [ 'rgba(255, 64, 105, .9)','rgba(255, 159, 64, .9)', 'rgba(153, 102, 255,.9 )','rgba(54, 162, 235, .9)'],
+    borderColor: ['rgba(255, 64, 105, .9)','rgba(255, 159, 64, .9)',  'rgba(153, 102, 255,.9 )','rgba(54, 162, 235, .9)'],
+
   }]
 };
 
@@ -120,33 +122,29 @@ const pieChart = new Chart(pieChartEl, {
     maintainAspectRatio: false,
     plugins: {
       tooltip: {
-        callbacks: {
-          label: function (context) {
-            return context.dataset.data[context.dataIndex];
-          }
-        }
+        backgroundColor: "#7A7A7A",
+        bodyFontColor: "#060A10",
+        borderColor: '#ffffff',
+        borderWidth: 1,
+        xPadding: 15,
+        yPadding: 15,
+        displayColors: false,
+        caretPadding: 10,
+        
       },
       legend: {
-        display: false
-      }
+        position: 'right',
+        rtl: true,
+        labels: {
+            font: {
+                family: "'Cairo', sans-serif",
+                size: 11
+            }
+        }
+    }
     }
   }
 });
-
-const legendContainer = document.querySelector('.chart-legend');
-const legendItems = pieChartData.labels.map((label, index) => {
-  const dataset = pieChartData.datasets[0];
-  const backgroundColor = dataset.backgroundColor[index];
-  const legendItem = document.createElement('div');
-  legendItem.classList.add('legend-item');
-  legendItem.innerHTML = `${label}<span style="background-color:${backgroundColor}"></span>`;
-  return legendItem;
-});
-
-legendItems.forEach(item => {
-  legendContainer.appendChild(item);
-});
-
 // Bar Chart 2
 var barChart2 = document.getElementById("barChart2").getContext("2d");
 var myChart = new Chart(barChart2, {
@@ -294,24 +292,5 @@ function toggleNeonShadow() {
   
 }
 
-// Call the toggleNeonShadow function initially
-toggleNeonShadow();
-// Function to format a number with thousands separators
-function formatNumberWithThousandsSeparator(elementId) {
-  const element = document.getElementById(elementId);
-  const value = element.innerText;
-  const formattedValue = parseInt(value.replace(/,/g, '')).toLocaleString();
-  element.innerText = formattedValue;
-}
-
-
-
-formatNumberWithThousandsSeparator("brunch-custody");
-formatNumberWithThousandsSeparator("Executed-contracts");
-formatNumberWithThousandsSeparator("Closed-contracts");
-formatNumberWithThousandsSeparator("Available-balance-brunch");
-formatNumberWithThousandsSeparator("used-balance-brunch");
-formatNumberWithThousandsSeparator("Available-balance-employee");
-formatNumberWithThousandsSeparator("used-balance-employee");
 
 
