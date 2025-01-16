@@ -1134,3 +1134,36 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*  */
+#carouselItem1 , #carouselItem2 , #carouselItem3 , #carouselItem4{
+min-height: 52vh;
+}
+#RentedCarListdiv,
+#AvailableCarListdiv,
+#NotAvailableCarListdiv {
+  height: 50vh;
+  min-height: 30rem;
+}
+.employee-chart-data, .branch-chart-data{
+  height: 100%;
+  padding-top: 5px;
+}
+.employee-row,
+.branch-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.chart-p{
+  margin-bottom: 0;
+}
+#first-row-of-charts {
+  border-bottom: 2px solid #e7e3e06e;
+}
+.pieChart-col {
+  border-left: 2px solid #e7e3e06e;
+}
+
+.employee-col {
+  border-left: 2px solid #e7e3e06e;
+}
