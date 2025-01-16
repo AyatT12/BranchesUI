@@ -1167,3 +1167,11 @@ min-height: 52vh;
 .employee-col {
   border-left: 2px solid #e7e3e06e;
 }
+
+@media (min-width:768px) {
+  #RentedCarListdiv,
+#AvailableCarListdiv,
+#NotAvailableCarListdiv {
+  min-height: 25rem;
+}
+}
