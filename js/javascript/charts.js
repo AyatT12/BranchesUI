@@ -105,11 +105,10 @@ function getCountByVersion(dataIndex) {
 //pieChart
 const pieChartEl = document.getElementById('pieChart');
 const pieChartData = {
-  labels: ['منتهيه',' تنتهي اليوم',  ' تنتهي غدا', 'تنتهي لاحقا'],
+  labels: ['منتهيه','اليوم',  'غدا', 'لاحقا'],
   datasets: [{
-    data: [342, 313, 245, 210],
-    backgroundColor: [ 'rgba(255, 64, 105, .9)','rgba(255, 159, 64, .9)', 'rgba(153, 102, 255,.9 )','rgba(54, 162, 235, .9)'],
-    borderColor: ['rgba(255, 64, 105, .9)','rgba(255, 159, 64, .9)',  'rgba(153, 102, 255,.9 )','rgba(54, 162, 235, .9)'],
+    data: [50, 300, 200, 350],
+    backgroundColor: [ 'rgba(242, 36, 36, 1)','rgba(242, 143, 36, 1)', '#9966FF','rgba(54, 162, 235, 1)'],
 
   }]
 };
@@ -133,13 +132,15 @@ const pieChart = new Chart(pieChartEl, {
         
       },
       legend: {
-        position: 'right',
+        position: 'bottom',
         rtl: true,
         labels: {
-            font: {
-                family: "'Cairo', sans-serif",
-                size: 11
-            }
+          boxWidth: 20, 
+          padding: 20,
+          font: {
+            family: "'Cairo', sans-serif",
+            size: 11
+          }
         }
     }
     }
