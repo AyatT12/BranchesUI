@@ -84,3 +84,10 @@ body{
         transform: translateX(-100%); 
     }
   }
+
+
+  #userDropdown{
+    text-align: end;
+  }
+ 
+  
