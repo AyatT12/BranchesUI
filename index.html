@@ -31,59 +31,51 @@
     <header class="header">
         <div class="navbar-area">
             <!-- Topbar -->
-            <nav class="navbar navbar-expand navbar-light topbar mb-1 static-top   justify-content-between"
-                style="height:80px">
+            <nav class="navbar navbar-expand navbar-light topbar mb-1 static-top  justify-content-between"
+                style="height:100px">
                 <!-- Topbar -->
                 <!-- Topbar Navbar -->
-                <ul class="navbar-nav ">
+                <ul class="navbar-nav p-0">
                     <!-- Nav Item - User Information -->
-                    <li class="nav-item dropdown no-arrow">
-                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                    <li class="nav-item dropdown no-arrow position-relative">
+                        <a class="nav-link dropdown-toggle  gap-2" href="#" id="userDropdown" role="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img class="img-profile rounded-circle" src="img/pic (3).svg">
                             <div class="userName" style="display: flex; flex-direction: column;">
                                 <span class=" text-dark font-weight-bold">
-                                    &#x639;&#x64A;&#x633;&#x649; &#x647;&#x627;&#x646;&#x64A;
-                                    &#x645;&#x628;&#x631;&#x648;&#x643; &#x639;&#x632;&#x627;&#x645;
+                                  عبدالمنعم عبدالحليم هشام الريس
                                 </span>
                                 <span class="text-dark">
-                                    &#x645;&#x634;&#x631;&#x641; &#x639;&#x644;&#x649;
-                                    &#x627;&#x644;&#x641;&#x631;&#x648;&#x639;
+                                    مشرف على الفروع
                                 </span>
                             </div>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-left shadow animated--grow-in text-right"
-                            style="font-size: 16px;font-weight: 600;color: black;" aria-labelledby="userDropdown">
+                        <div class="dropdown-menu dropdown-menu-left  animated--grow-in "
+                            style="font-size: 14px; width: 160px;" aria-labelledby="userDropdown">
                             <!-- item-->
-                            <div class="dropdown-header noti-title dropdown-item">
-                                <h6 class="text-overflow m-0">مرحباً</h6>
-                            </div>
-
-                            <!-- item-->
-                            <a class="dropdown-item notify-item" href="https://ayatt12.github.io/account/">
-                                <i class="mdi mdi-account-circle me-1"></i>
+                            <a class="dropdown-item notify-item " >
+                                <img src="img/Frame (2).svg"/>
                                 <span>حسابى</span>
                             </a>
-                            <a class="dropdown-item notify-item" data-bs-toggle="modal" data-bs-target="#PasswordModal"
-                                style="cursor:pointer">
-                                <i class="mdi mdi-onepassword me-1"></i>
+                            <a class="dropdown-item notify-item ">
+                                <img src="img/Frame (1).svg"/>
                                 <span>تغيير كلمة السر</span>
                             </a>
-                            <a class="dropdown-item notify-item" href="https://ayatt12.github.io/test-page/">
-                                <i class="mdi mdi-access-point-network me-1"></i>
+                            <a class="dropdown-item notify-item " >
+                                <img src="img/Frame (3).svg"/>
                                 <span>الانظمة</span>
                             </a>
-
+                                <hr class="dropdown-divider">
                             <!-- item-->
-                            <a class="dropdown-item notify-item" href="https://ayatt12.github.io/test-page/login.html">
-                                <i class="mdi mdi-logout me-1"></i>
+                            <a class="dropdown-item notify-item ">
+                                <img src="img/Frame (4).svg"/>
                                 <span>تسجيل الخروج</span>
                             </a>
                         </div>
                     </li>
                     <!-- Nav Item - Alerts -->
-                    <li class="nav-item dropdown no-arrow mx-1">
-                        <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                    <li class="nav-item dropdown no-arrow mx-2">
+                        <a class="nav-link dropdown-toggle p-0" href="#" id="alertsDropdown" role="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="dripicons-bell noti-icon"
                                 style="font-size: 22px;vertical-align: middle;line-height: 70px;color: #7a7272;"></i>
@@ -158,8 +150,8 @@
                         </div>
                     </li>
                     <!-- Nav Item - Language -->
-                    <li class="nav-item dropdown no-arrow mx-2 me-2">
-                        <a class="nav-link dropdown-toggle" role="button"
+                    <li class="nav-item dropdown no-arrow mx-2 ">
+                        <a class="nav-link dropdown-toggle p-0" role="button"
                             href="#">
                             <span class="align-middle"
                                 style="color: #8d8282;font-size: 14px;font-weight: 600;">En</span>
@@ -167,11 +159,12 @@
                     </li>
                 </ul>
                 <!-- logo -->
-                <div class=" d-flex align-items-center on-mobile" style="color:black;">
-                    <div class="pt-sm-0 pt-md-4  pt-lg-4 pt-xl-4 px-3">
+
+                <div class=" d-flex align-items-end on-mobile gap-3" style="color:black;">
+                    <div class="">
                         <h1 class="hide-on-mobile" style="font-size: 1.2rem;font-weight: bold;">
                             شركة كدي لتأجير السيارات </h1>
-                        <p class="extra-small-mobile">
+                        <p class="extra-small-mobile m-0">
                             &#x627;&#x644;&#x631;&#x626;&#x64A;&#x633;&#x64A; </p>
                     </div>
                     <img class="extra-small-mobile " src="img/CompanyLogo_20240325231449.png"
@@ -183,33 +176,15 @@
       
     <div class="wrapper flex-grow-1 d-flex align-items-center flex-column ">
          <!-- Alerts -->
-       <div class="col">
-        <div class="container-fluid mb-1">
-            <div class="row">
-                <div class="col-12 d-flex flex-column gap-1 w-100">
-                    <nav class="warnings navbar-expand-lg navbar-light py-2" id="warnings">
-                    <div class="marquee">
-                        <div class="marquee-content">
-                       <p> الشركة موقوفة, تم تقليص بعض الخدمات  <i class="fa-solid fa-circle-exclamation"></i></p> 
-                        <p>الخدمة مؤقتة حاليًا بسبب التحديثات   <i class="fa-solid fa-circle-exclamation"></i></p>
-                        <p>يرجى التواصل مع الدعم الفني في حالة الطوارئ   <i class="fa-solid fa-circle-exclamation"></i></p>
-                        <p>الشركة موقوفة, تم تقليص بعض الخدمات  <i class="fa-solid fa-circle-exclamation"></i></p>
-                        </div>
-                    </div>
-                    <i  class="fa-regular fa-circle-xmark marquee-xmark" id="marquee-xmark"></i>
-                    </nav>
-                </div>
-            </div>
-        </div>
-       </div>
-    <!-- --- -->
+      
+       <!-- --- -->
        <div class="col">
         <div class="container-fluid ">
             <!-- Content Row -->
             <section class="section-mainCard home-section">
                 <div class="row justify-content-center w-100 main-row ">
                     <!--  Chart -->
-                    <div class="col-xl-8">
+                    <div class="col-xxl-9">
 
                         <div class="card shadow ">
 
@@ -348,7 +323,7 @@
                                                                                             <div
                                                                                                 class="col-auto car-data">
                                                                                                 <p>القراءة الحالية:
-                                                                                                    ۱۰۱٥۰</p>
+                                                                                                    1050</p>
                                                                                             </div>
 
                                                                                         </div>
@@ -408,7 +383,7 @@
                                                                                             <div
                                                                                                 class="col-auto car-data">
                                                                                                 <p>القراءة الحالية:
-                                                                                                    ۱۰۱٥۰</p>
+                                                                                                    1050</p>
                                                                                             </div>
 
                                                                                         </div>
@@ -468,7 +443,7 @@
                                                                                             <div
                                                                                                 class="col-auto car-data">
                                                                                                 <p>القراءة الحالية:
-                                                                                                    ۱۰۱٥۰</p>
+                                                                                                    1050</p>
                                                                                             </div>
 
                                                                                         </div>
@@ -528,7 +503,7 @@
                                                                                             <div
                                                                                                 class="col-auto car-data">
                                                                                                 <p>القراءة الحالية:
-                                                                                                    ۱۰۱٥۰</p>
+                                                                                                    1050</p>
                                                                                             </div>
 
                                                                                         </div>
@@ -588,7 +563,7 @@
                                                                                             <div
                                                                                                 class="col-auto car-data">
                                                                                                 <p>القراءة الحالية:
-                                                                                                    ۱۰۱٥۰</p>
+                                                                                                    1050</p>
                                                                                             </div>
 
                                                                                         </div>
@@ -691,7 +666,7 @@
                                                                                                         class="col-auto car-data">
                                                                                                         <p>القراءة
                                                                                                             الحالية:
-                                                                                                            ۱۰۱٥۰</p>
+                                                                                                            1050</p>
                                                                                                     </div>
 
                                                                                                 </div>
@@ -709,15 +684,13 @@
                                                                                                     class="row car-data-row">
                                                                                                     <div
                                                                                                         class="col-lg-11 car-data">
-                                                                                                        <div
-                                                                                                            class="row ">
-                                                                                                            <div
-                                                                                                                class="col">
+                                                                                                        <div class="row justify-content-end gap-1">
+                                                                                                             <div class="col-auto">
                                                                                                                 <div
                                                                                                                     class="row justify-content-center align-items-center flex-nowrap ">
                                                                                                                     <div
                                                                                                                         class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 93.svg"
+                                                                                                                        <img src="img/icons/automatic trans.png"
                                                                                                                             class="iconss">
 
                                                                                                                     </div>
@@ -726,12 +699,12 @@
 
                                                                                                             </div>
                                                                                                             <div
-                                                                                                                class="col">
+                                                                                                                class="col-auto">
                                                                                                                 <div
                                                                                                                     class="row justify-content-center align-items-centerflex-nowrap ">
                                                                                                                     <div
                                                                                                                         class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 143.svg"
+                                                                                                                        <img src="img/icons/Fuel.png"
                                                                                                                             class="iconss">
 
                                                                                                                     </div>
@@ -740,12 +713,12 @@
 
                                                                                                             </div>
                                                                                                             <div
-                                                                                                                class="col">
+                                                                                                                class="col-auto">
                                                                                                                 <div
                                                                                                                     class="row justify-content-center align-items-centerflex-nowrap ">
                                                                                                                     <div
                                                                                                                         class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 95.svg"
+                                                                                                                        <img src="img/icons/man-auto trans.png"
                                                                                                                             class="iconss">
 
                                                                                                                     </div>
@@ -758,12 +731,12 @@
 
                                                                                                             </div>
                                                                                                             <div
-                                                                                                                class="col">
+                                                                                                                class="col-auto">
                                                                                                                 <div
                                                                                                                     class="row justify-content-center align-items-centerflex-nowrap ">
                                                                                                                     <div
                                                                                                                         class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 96.svg"
+                                                                                                                        <img src="img/icons/manual trans.png"
                                                                                                                             class="iconss">
 
                                                                                                                     </div>
@@ -776,7 +749,7 @@
 
                                                                                                             </div>
                                                                                                             <div
-                                                                                                                class="col">
+                                                                                                                class="col-auto">
                                                                                                                 <div
                                                                                                                     class="row justify-content-center align-items-centerflex-nowrap ">
                                                                                                                     <div
@@ -794,7 +767,7 @@
 
                                                                                                             </div>
                                                                                                             <div
-                                                                                                                class="col">
+                                                                                                                class="col-auto">
                                                                                                                 <div
                                                                                                                     class="row justify-content-center align-items-centerflex-nowrap ">
                                                                                                                     <div
@@ -1038,109 +1011,108 @@
                                                                                                     class="row car-data-row">
                                                                                                     <div
                                                                                                         class="col-lg-11 car-data">
-                                                                                                        <div
-                                                                                                            class="row ">
+                                                                                                        <div class="row justify-content-end gap-1">
                                                                                                             <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-center flex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 93.svg"
-                                                                                                                            class="iconss">
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-center flex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/icons/automatic trans.png"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
+                                                                                                                   </div>
 
-                                                                                                                </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 143.svg"
-                                                                                                                            class="iconss">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/icons/Fuel.png"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
+                                                                                                                   </div>
 
-                                                                                                                </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 95.svg"
-                                                                                                                            class="iconss">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/icons/man-auto trans.png"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
-                                                                                                                    <div
-                                                                                                                        class="col-auto p-0">
-                                                                                                                        <p>4
-                                                                                                                        </p>
-                                                                                                                    </div>
-                                                                                                                </div>
+                                                                                                                   </div>
+                                                                                                                   <div
+                                                                                                                       class="col-auto p-0">
+                                                                                                                       <p>4
+                                                                                                                       </p>
+                                                                                                                   </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 96.svg"
-                                                                                                                            class="iconss">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/icons/manual trans.png"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
-                                                                                                                    <div
-                                                                                                                        class="col-auto p-0">
-                                                                                                                        <p>5
-                                                                                                                        </p>
-                                                                                                                    </div>
-                                                                                                                </div>
+                                                                                                                   </div>
+                                                                                                                   <div
+                                                                                                                       class="col-auto p-0">
+                                                                                                                       <p>5
+                                                                                                                       </p>
+                                                                                                                   </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 97.svg"
-                                                                                                                            class="iconss">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/carDataIcons/Rectangle 97.svg"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
-                                                                                                                    <div
-                                                                                                                        class="col-auto p-0">
-                                                                                                                        <p>2
-                                                                                                                        </p>
-                                                                                                                    </div>
-                                                                                                                </div>
+                                                                                                                   </div>
+                                                                                                                   <div
+                                                                                                                       class="col-auto p-0">
+                                                                                                                       <p>2
+                                                                                                                       </p>
+                                                                                                                   </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 98.svg"
-                                                                                                                            class="iconss">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/carDataIcons/Rectangle 98.svg"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
-                                                                                                                    <div
-                                                                                                                        class="col-auto p-0">
-                                                                                                                        <p>1
-                                                                                                                        </p>
-                                                                                                                    </div>
-                                                                                                                </div>
+                                                                                                                   </div>
+                                                                                                                   <div
+                                                                                                                       class="col-auto p-0">
+                                                                                                                       <p>1
+                                                                                                                       </p>
+                                                                                                                   </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                        </div>
+                                                                                                           </div>
+                                                                                                       </div>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
@@ -1352,7 +1324,7 @@
                                                                                                         class="col-auto car-data">
                                                                                                         <p>القراءة
                                                                                                             الحالية:
-                                                                                                            ۱۰۱٥۰</p>
+                                                                                                            1050</p>
                                                                                                     </div>
 
                                                                                                 </div>
@@ -1370,109 +1342,108 @@
                                                                                                     class="row car-data-row">
                                                                                                     <div
                                                                                                         class="col-lg-11 car-data">
-                                                                                                        <div
-                                                                                                            class="row ">
+                                                                                                        <div class="row justify-content-end gap-1">
                                                                                                             <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-center flex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 93.svg"
-                                                                                                                            class="iconss">
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-center flex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/icons/automatic trans.png"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
+                                                                                                                   </div>
 
-                                                                                                                </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 143.svg"
-                                                                                                                            class="iconss">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/icons/Fuel.png"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
+                                                                                                                   </div>
 
-                                                                                                                </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 95.svg"
-                                                                                                                            class="iconss">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/icons/man-auto trans.png"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
-                                                                                                                    <div
-                                                                                                                        class="col-auto p-0">
-                                                                                                                        <p>4
-                                                                                                                        </p>
-                                                                                                                    </div>
-                                                                                                                </div>
+                                                                                                                   </div>
+                                                                                                                   <div
+                                                                                                                       class="col-auto p-0">
+                                                                                                                       <p>4
+                                                                                                                       </p>
+                                                                                                                   </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 96.svg"
-                                                                                                                            class="iconss">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/icons/manual trans.png"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
-                                                                                                                    <div
-                                                                                                                        class="col-auto p-0">
-                                                                                                                        <p>5
-                                                                                                                        </p>
-                                                                                                                    </div>
-                                                                                                                </div>
+                                                                                                                   </div>
+                                                                                                                   <div
+                                                                                                                       class="col-auto p-0">
+                                                                                                                       <p>5
+                                                                                                                       </p>
+                                                                                                                   </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 97.svg"
-                                                                                                                            class="iconss">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/carDataIcons/Rectangle 97.svg"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
-                                                                                                                    <div
-                                                                                                                        class="col-auto p-0">
-                                                                                                                        <p>2
-                                                                                                                        </p>
-                                                                                                                    </div>
-                                                                                                                </div>
+                                                                                                                   </div>
+                                                                                                                   <div
+                                                                                                                       class="col-auto p-0">
+                                                                                                                       <p>2
+                                                                                                                       </p>
+                                                                                                                   </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 98.svg"
-                                                                                                                            class="iconss">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/carDataIcons/Rectangle 98.svg"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
-                                                                                                                    <div
-                                                                                                                        class="col-auto p-0">
-                                                                                                                        <p>1
-                                                                                                                        </p>
-                                                                                                                    </div>
-                                                                                                                </div>
+                                                                                                                   </div>
+                                                                                                                   <div
+                                                                                                                       class="col-auto p-0">
+                                                                                                                       <p>1
+                                                                                                                       </p>
+                                                                                                                   </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                        </div>
+                                                                                                           </div>
+                                                                                                       </div>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
@@ -1684,7 +1655,7 @@
                                                                                                         class="col-auto car-data">
                                                                                                         <p>القراءة
                                                                                                             الحالية:
-                                                                                                            ۱۰۱٥۰</p>
+                                                                                                            1050</p>
                                                                                                     </div>
 
                                                                                                 </div>
@@ -1702,109 +1673,108 @@
                                                                                                     class="row car-data-row">
                                                                                                     <div
                                                                                                         class="col-lg-11 car-data">
-                                                                                                        <div
-                                                                                                            class="row ">
+                                                                                                        <div class="row justify-content-end gap-1">
                                                                                                             <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-center flex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 93.svg"
-                                                                                                                            class="iconss">
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-center flex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/icons/automatic trans.png"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
+                                                                                                                   </div>
 
-                                                                                                                </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 143.svg"
-                                                                                                                            class="iconss">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/icons/Fuel.png"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
+                                                                                                                   </div>
 
-                                                                                                                </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 95.svg"
-                                                                                                                            class="iconss">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/icons/man-auto trans.png"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
-                                                                                                                    <div
-                                                                                                                        class="col-auto p-0">
-                                                                                                                        <p>4
-                                                                                                                        </p>
-                                                                                                                    </div>
-                                                                                                                </div>
+                                                                                                                   </div>
+                                                                                                                   <div
+                                                                                                                       class="col-auto p-0">
+                                                                                                                       <p>4
+                                                                                                                       </p>
+                                                                                                                   </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 96.svg"
-                                                                                                                            class="iconss">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/icons/manual trans.png"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
-                                                                                                                    <div
-                                                                                                                        class="col-auto p-0">
-                                                                                                                        <p>5
-                                                                                                                        </p>
-                                                                                                                    </div>
-                                                                                                                </div>
+                                                                                                                   </div>
+                                                                                                                   <div
+                                                                                                                       class="col-auto p-0">
+                                                                                                                       <p>5
+                                                                                                                       </p>
+                                                                                                                   </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 97.svg"
-                                                                                                                            class="iconss">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/carDataIcons/Rectangle 97.svg"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
-                                                                                                                    <div
-                                                                                                                        class="col-auto p-0">
-                                                                                                                        <p>2
-                                                                                                                        </p>
-                                                                                                                    </div>
-                                                                                                                </div>
+                                                                                                                   </div>
+                                                                                                                   <div
+                                                                                                                       class="col-auto p-0">
+                                                                                                                       <p>2
+                                                                                                                       </p>
+                                                                                                                   </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 98.svg"
-                                                                                                                            class="iconss">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/carDataIcons/Rectangle 98.svg"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
-                                                                                                                    <div
-                                                                                                                        class="col-auto p-0">
-                                                                                                                        <p>1
-                                                                                                                        </p>
-                                                                                                                    </div>
-                                                                                                                </div>
+                                                                                                                   </div>
+                                                                                                                   <div
+                                                                                                                       class="col-auto p-0">
+                                                                                                                       <p>1
+                                                                                                                       </p>
+                                                                                                                   </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                        </div>
+                                                                                                           </div>
+                                                                                                       </div>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
@@ -2016,7 +1986,7 @@
                                                                                                         class="col-auto car-data">
                                                                                                         <p>القراءة
                                                                                                             الحالية:
-                                                                                                            ۱۰۱٥۰</p>
+                                                                                                            1050</p>
                                                                                                     </div>
 
                                                                                                 </div>
@@ -2034,109 +2004,108 @@
                                                                                                     class="row car-data-row">
                                                                                                     <div
                                                                                                         class="col-lg-11 car-data">
-                                                                                                        <div
-                                                                                                            class="row ">
+                                                                                                        <div class="row justify-content-end gap-1">
                                                                                                             <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-center flex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 93.svg"
-                                                                                                                            class="iconss">
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-center flex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/icons/automatic trans.png"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
+                                                                                                                   </div>
 
-                                                                                                                </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 143.svg"
-                                                                                                                            class="iconss">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/icons/Fuel.png"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
+                                                                                                                   </div>
 
-                                                                                                                </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 95.svg"
-                                                                                                                            class="iconss">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/icons/man-auto trans.png"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
-                                                                                                                    <div
-                                                                                                                        class="col-auto p-0">
-                                                                                                                        <p>4
-                                                                                                                        </p>
-                                                                                                                    </div>
-                                                                                                                </div>
+                                                                                                                   </div>
+                                                                                                                   <div
+                                                                                                                       class="col-auto p-0">
+                                                                                                                       <p>4
+                                                                                                                       </p>
+                                                                                                                   </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 96.svg"
-                                                                                                                            class="iconss">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/icons/manual trans.png"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
-                                                                                                                    <div
-                                                                                                                        class="col-auto p-0">
-                                                                                                                        <p>5
-                                                                                                                        </p>
-                                                                                                                    </div>
-                                                                                                                </div>
+                                                                                                                   </div>
+                                                                                                                   <div
+                                                                                                                       class="col-auto p-0">
+                                                                                                                       <p>5
+                                                                                                                       </p>
+                                                                                                                   </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 97.svg"
-                                                                                                                            class="iconss">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/carDataIcons/Rectangle 97.svg"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
-                                                                                                                    <div
-                                                                                                                        class="col-auto p-0">
-                                                                                                                        <p>2
-                                                                                                                        </p>
-                                                                                                                    </div>
-                                                                                                                </div>
+                                                                                                                   </div>
+                                                                                                                   <div
+                                                                                                                       class="col-auto p-0">
+                                                                                                                       <p>2
+                                                                                                                       </p>
+                                                                                                                   </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 98.svg"
-                                                                                                                            class="iconss">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/carDataIcons/Rectangle 98.svg"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
-                                                                                                                    <div
-                                                                                                                        class="col-auto p-0">
-                                                                                                                        <p>1
-                                                                                                                        </p>
-                                                                                                                    </div>
-                                                                                                                </div>
+                                                                                                                   </div>
+                                                                                                                   <div
+                                                                                                                       class="col-auto p-0">
+                                                                                                                       <p>1
+                                                                                                                       </p>
+                                                                                                                   </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                        </div>
+                                                                                                           </div>
+                                                                                                       </div>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
@@ -2348,7 +2317,7 @@
                                                                                                         class="col-auto car-data">
                                                                                                         <p>القراءة
                                                                                                             الحالية:
-                                                                                                            ۱۰۱٥۰</p>
+                                                                                                            1050</p>
                                                                                                     </div>
 
                                                                                                 </div>
@@ -2366,109 +2335,108 @@
                                                                                                     class="row car-data-row">
                                                                                                     <div
                                                                                                         class="col-lg-11 car-data">
-                                                                                                        <div
-                                                                                                            class="row ">
+                                                                                                        <div class="row justify-content-end gap-1">
                                                                                                             <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-center flex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 93.svg"
-                                                                                                                            class="iconss">
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-center flex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/icons/automatic trans.png"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
+                                                                                                                   </div>
 
-                                                                                                                </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 143.svg"
-                                                                                                                            class="iconss">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/icons/Fuel.png"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
+                                                                                                                   </div>
 
-                                                                                                                </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 95.svg"
-                                                                                                                            class="iconss">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/icons/man-auto trans.png"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
-                                                                                                                    <div
-                                                                                                                        class="col-auto p-0">
-                                                                                                                        <p>4
-                                                                                                                        </p>
-                                                                                                                    </div>
-                                                                                                                </div>
+                                                                                                                   </div>
+                                                                                                                   <div
+                                                                                                                       class="col-auto p-0">
+                                                                                                                       <p>4
+                                                                                                                       </p>
+                                                                                                                   </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 96.svg"
-                                                                                                                            class="iconss">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/icons/manual trans.png"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
-                                                                                                                    <div
-                                                                                                                        class="col-auto p-0">
-                                                                                                                        <p>5
-                                                                                                                        </p>
-                                                                                                                    </div>
-                                                                                                                </div>
+                                                                                                                   </div>
+                                                                                                                   <div
+                                                                                                                       class="col-auto p-0">
+                                                                                                                       <p>5
+                                                                                                                       </p>
+                                                                                                                   </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 97.svg"
-                                                                                                                            class="iconss">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/carDataIcons/Rectangle 97.svg"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
-                                                                                                                    <div
-                                                                                                                        class="col-auto p-0">
-                                                                                                                        <p>2
-                                                                                                                        </p>
-                                                                                                                    </div>
-                                                                                                                </div>
+                                                                                                                   </div>
+                                                                                                                   <div
+                                                                                                                       class="col-auto p-0">
+                                                                                                                       <p>2
+                                                                                                                       </p>
+                                                                                                                   </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 98.svg"
-                                                                                                                            class="iconss">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/carDataIcons/Rectangle 98.svg"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
-                                                                                                                    <div
-                                                                                                                        class="col-auto p-0">
-                                                                                                                        <p>1
-                                                                                                                        </p>
-                                                                                                                    </div>
-                                                                                                                </div>
+                                                                                                                   </div>
+                                                                                                                   <div
+                                                                                                                       class="col-auto p-0">
+                                                                                                                       <p>1
+                                                                                                                       </p>
+                                                                                                                   </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                        </div>
+                                                                                                           </div>
+                                                                                                       </div>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
@@ -2710,7 +2678,7 @@
                                                                                                         class="col-auto car-data">
                                                                                                         <p>القراءة
                                                                                                             الحالية:
-                                                                                                            ۱۰۱٥۰</p>
+                                                                                                            1050</p>
                                                                                                     </div>
 
                                                                                                 </div>
@@ -2728,109 +2696,108 @@
                                                                                                     class="row car-data-row">
                                                                                                     <div
                                                                                                         class="col-lg-11 car-data">
-                                                                                                        <div
-                                                                                                            class="row ">
+                                                                                                        <div class="row justify-content-end gap-1">
                                                                                                             <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-center flex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 93.svg"
-                                                                                                                            class="w-100">
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-center flex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/icons/automatic trans.png"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
+                                                                                                                   </div>
 
-                                                                                                                </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 143.svg"
-                                                                                                                            class="w-100">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/icons/Fuel.png"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
+                                                                                                                   </div>
 
-                                                                                                                </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 95.svg"
-                                                                                                                            class="w-100">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/icons/man-auto trans.png"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
-                                                                                                                    <div
-                                                                                                                        class="col-auto p-0">
-                                                                                                                        <p>4
-                                                                                                                        </p>
-                                                                                                                    </div>
-                                                                                                                </div>
+                                                                                                                   </div>
+                                                                                                                   <div
+                                                                                                                       class="col-auto p-0">
+                                                                                                                       <p>4
+                                                                                                                       </p>
+                                                                                                                   </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 96.svg"
-                                                                                                                            class="w-100">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/icons/manual trans.png"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
-                                                                                                                    <div
-                                                                                                                        class="col-auto p-0">
-                                                                                                                        <p>5
-                                                                                                                        </p>
-                                                                                                                    </div>
-                                                                                                                </div>
+                                                                                                                   </div>
+                                                                                                                   <div
+                                                                                                                       class="col-auto p-0">
+                                                                                                                       <p>5
+                                                                                                                       </p>
+                                                                                                                   </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 97.svg"
-                                                                                                                            class="w-100">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/carDataIcons/Rectangle 97.svg"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
-                                                                                                                    <div
-                                                                                                                        class="col-auto p-0">
-                                                                                                                        <p>2
-                                                                                                                        </p>
-                                                                                                                    </div>
-                                                                                                                </div>
+                                                                                                                   </div>
+                                                                                                                   <div
+                                                                                                                       class="col-auto p-0">
+                                                                                                                       <p>2
+                                                                                                                       </p>
+                                                                                                                   </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col">
-                                                                                                                <div
-                                                                                                                    class="row justify-content-center align-items-centerflex-nowrap ">
-                                                                                                                    <div
-                                                                                                                        class="col-auto">
-                                                                                                                        <img src="img/carDataIcons/Rectangle 98.svg"
-                                                                                                                            class="w-100">
+                                                                                                           </div>
+                                                                                                           <div
+                                                                                                               class="col-auto">
+                                                                                                               <div
+                                                                                                                   class="row justify-content-center align-items-centerflex-nowrap ">
+                                                                                                                   <div
+                                                                                                                       class="col-auto">
+                                                                                                                       <img src="img/carDataIcons/Rectangle 98.svg"
+                                                                                                                           class="iconss">
 
-                                                                                                                    </div>
-                                                                                                                    <div
-                                                                                                                        class="col-auto p-0">
-                                                                                                                        <p>1
-                                                                                                                        </p>
-                                                                                                                    </div>
-                                                                                                                </div>
+                                                                                                                   </div>
+                                                                                                                   <div
+                                                                                                                       class="col-auto p-0">
+                                                                                                                       <p>1
+                                                                                                                       </p>
+                                                                                                                   </div>
+                                                                                                               </div>
 
-                                                                                                            </div>
-                                                                                                        </div>
+                                                                                                           </div>
+                                                                                                       </div>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
@@ -2895,19 +2862,106 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="main-carousel-item" id="carouselItem5">
+                                    <div id="carousel5" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner" id="carousel-inner5">
+                                            <div class="row flex-row-reverse g-4">
+                                                <div class="col-md-auto">
+                                                    <div class="row buttons text-center flex-column g-1 buttons-car-categories  gap-1 px-1 ">
+                                                        <button class="btn btn-car-categoray"> الكل </button>
+                                
+                                                        <button class="btn btn-car-categoray"> اقتصادية </button>
+                                
+                                                        <button class="btn btn-car-categoray"> عائلية صغيرة
+                                                        </button>
+                                
+                                                        <button class="btn btn-car-categoray"> عائلية وسط </button>
+                                
+                                
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row px-3 align-items-start carsdiv" id="RentedCarListdiv">
+                                                        <table width="100%" class="table table-hover" id="RentedCarsListTable">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="row flex-row-reverse car-img-data">
+                                                                            <div class="col-md-3">
+                                                                                <div class="d-flex justify-content-center align-items-center h-100">
+                                                                                    <img src="img/cars/2020000006.png" class="carImg w-100">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-9">
+                                                                                <div class="row">
+                                                                                    <div class="col">
+                                                                                        <div class="row car-data-row ">
+                                
+                                                                                            <div class="col-lg-5 car-data">
+                                                                                                <p>1579634852</p>
+                                                                                            </div>
+                                                                                            <div class="col-auto car-data">
+                                                                                                <p>القراءة الحالية:
+                                                                                                    1050</p>
+                                                                                            </div>
+                                
+                                                                                        </div>
+                                                                                        <div class="row">
+                                                                                            <div class="col car-data">
+                                                                                                <P>فورد - تورس - ۲۰۱۹ -
+                                                                                                    سيدان متوسطة - أزرق
+                                                                                                    - 9714 ق د ف </P>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="row flex-row-reverse justify-content-between">
+                                
+                                                                                            <div class="col-xl-6">
+                                                                                                <div class="row">
+                                                                                                    <div class="col-md-12 car-data">
+                                                                                                        <p>24-1401-4004101-000061
+                                                                                                        </p>
+                                                                                                    </div>
+                                                                                                    <div class="col-md-12 car-data">
+                                                                                                        <p> عبدالرحيم ماجد
+                                                                                                            عبدالجبار المحيسني
+                                                                                                        </p>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-xl-auto car-data">
+                                                                                                <p><span>22/05/2025</span> :تاريخ الحفظ </p>
+                                                                                                <p><span>22/05/2025</span> :نهاية الحفظ </p>
+                                                                                                <p> المصدر: <span>شركة كدي لتأجير السيارات</span> </p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                
+                                                                    </td>
+                                
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
 
                     </div>
 
-
-                    <div class="col-lg-12 col-xl-2  bg-transparent " id="button-on-mobile">
+                    <div class="col-lg-12 col-xxl-2  bg-transparent " id="button-on-mobile">
                         <!-- Card Body -->
                         <div class="card-body p-0 mt-2">
                             <form action="" method="" id="formID">
                                 <div class="row align-items-center flex-row-reverse">
-                                    <div class=" col-md-4 col-lg-4 col-xl-12 Branch">
+                                    <div class=" col-md-4 col-xxl-12 Branch">
                                         <select id="branchList" name="branchList">
                                             <option></option>
                                             <option value="الفرع_الاول">الفرع الاول</option>
@@ -2915,38 +2969,36 @@
                                         </select>
                                         <label for="branchList" style="color: black;">الفرع </label>
                                     </div>
-
-                                    <div class=" col-6 col-md-4 col-lg-4 col-xl-12">
+                                    
+                                    <div class="col-6 col-md-4 col-xxl-12">
                                         <div>
                                             <button type="button" class="btn btn-secondary1  mt-2 active1" id="chart"
-                                                onclick="showCarouselItem(1) , setActiveButton(0)"><img
-                                                    src="img/Rectangle 74.svg"
+                                                onclick="showCarouselItem(1) , setActiveButton(0)"><img src="img/Rectangle 74.svg"
                                                     class="chart-buttons-img">الاحصائيات</button>
                                         </div>
                                     </div>
-                                    <div class=" col-6 col-md-4 col-lg-4 col-xl-12">
+                                    <div class=" col-6 col-md-4 col-xxl-12">
                                         <button type="button" class="btn btn-secondary1 " id="toggleCarousel"
                                             onclick="showCarouselItem(2) ,setActiveButton(1)"><img
                                                 src="img/Rectangle 75.svg" class="chart-buttons-img">مؤجرة</button>
                                     </div>
 
-                                    <div class=" col-6 col-md-4 col-lg-4 col-xl-12"><button type="button"
+                                    <div class=" col-6 col-md-4 col-xxl-12"><button type="button"
                                             class="btn btn-secondary1 " id="toggleCarousel2"
                                             onclick="showCarouselItem(3) ,setActiveButton(2)"><img
                                                 src="img/Rectangle 76.svg" class="chart-buttons-img">متاحة</button>
                                     </div>
 
-                                    <div class=" col-6 col-md-4 col-lg-4 col-xl-12"> <button type="button"
+                                    <div class=" col-6 col-md-4 col-xxl-12"> <button type="button"
                                             class="btn btn-secondary1 " id="toggleCarousel3"
                                             onclick="showCarouselItem(4),setActiveButton(3)"><img
                                                 src="img/Rectangle 77.svg" class="chart-buttons-img">غير متاحة</button>
                                     </div>
-                                    <!-- <div class=" col-6 col-md-4 col-lg-4 col-xl-12">
+                                    <div class=" col-6 col-md-4 col-xxl-12">
                                         <button type="button" class="btn btn-secondary1"
-                                            onclick="setActiveButton(4)"><img src="img/Rectangle 78.png"
-                                                class="chart-buttons-img">رسائل</button>
-                                    </div> -->
-                                    <!-- </button> -->
+                                            onclick="showCarouselItem(5),setActiveButton(4)"><img src="img/SavedCars.svg"
+                                                class="chart-buttons-img">محفوظة</button>
+                                    </div>
                                 </div>
                             </form>
 
@@ -2974,40 +3026,40 @@
         <div class="container footer-buttons justify-content-center py-1" style="box-sizing: border-box; ">
             <div class="row  footer-buttons-row">
                 <!-- First row of buttons -->
-                <div class="col-md-4 col-lg-3 ">
+                <div class="col-sm-6 col-md-6 col-lg-3 ">
                     <a type="button" href="https://ayatt12.github.io/SavedContracts/index.html"  class="btn btn-Pages mb-2"><img src="img/Rectangle 35.png">
                         العقود المحفوظة </a>
                 </div>
-                <div class="col-md-4 col-lg-3  ">
+                <div class="col-sm-6 col-md-6 col-lg-3  ">
                     <a type="button" href="https://ayatt12.github.io/extension/" class="btn btn-Pages mb-2"><img src="img/Rectangle 31.png">
                         تمديد العقد</a>
                 </div>
-                <div class="col-md-4 col-lg-3  ">
+                <div class="col-sm-6 col-md-6 col-lg-3  ">
                     <a type="button" href="https://ayatt12.github.io/settelment/index.html" class="btn btn-Pages mb-2"><img src="img/Rectangle 30.png">
                         تسوية العقد</a>
                 </div>
-                <div class="col-md-4 col-lg-3  ">
+                <div class="col-sm-6 col-md-6 col-lg-3  ">
                     <a type="button" href="https://ayatt12.github.io/ContractV2/" class="btn btn-Pages mb-2"><img src="img/Rectangle 29.png">
                         إنشاء العقد</a>
                 </div>
 
 
                 <!-- Second row of buttons -->
-                <div class="col-md-4 col-lg-3 mb-1 ">
+                <div class="col-sm-6 col-md-6 col-lg-3 mb-1 ">
                     <a type="button" class="btn btn-Pages neonShadow " id="pulse-button-brunch"
                         href="https://ayatt12.github.io/custody/"><img src="img/Rectangle 36.png" class="anm"
                             id="brunch_button-img">تسليم
                         العهدة</a>
                 </div>
-                <div class="col-md-4 col-lg-3  mb-1   ">
+                <div class="col-sm-6 col-md-6 col-lg-3  mb-1   ">
                     <a type="button" href="https://ayatt12.github.io/Feed/" class="btn btn-Pages neonShadow " id="pulse-button-employee" ><img src="img/Rectangle 33.png" class="anm"> تغذية
                         الصندوق</a>
                 </div>
-                <div class="col-md-4 col-lg-3  mb-1  ">
+                <div class="col-sm-6 col-md-6 col-lg-3  mb-1  ">
                     <a type="button"  href="https://ayatt12.github.io/report/" class="btn btn-Pages "><img src="img/Rectangle 32.png">
                         التقرير المالي</a>
                 </div>
-                <div class="col-md-4 col-lg-3  mb-1 ">
+                <div class="col-sm-6 col-md-6 col-lg-3  mb-1 ">
                     <a type="button" href="https://ayatt12.github.io/tenant/" class="btn btn-Pages "><img src="img/Rectangle 34.png">
                         مستأجرين</a>
                 </div>
@@ -3016,68 +3068,7 @@
         </div>
     </footer>
     <!--/ End Footer Area -->
-    <!-- passowrd Modal-->
-    <div class="modal fade" id="PasswordModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered  ">
-            <div class="modal-content">
-                <form class="needs-validation" novalidate>
-                    <div class="modal-header password-modal-header mb-2">
-                        <p class="card-title">تغيير كلمة السر</p>
-                        <button class="close" type="button" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><img src="img/cancel.png"></span>
-                        </button>
-                    </div>
-                    <div class="modal-body p-0 password-modal-body">
-                        <div class="account-container password-container p-4">
-                            <div class="row gap-2">
-                                <div class="col-md-12 ">
-                                    <div class="row flex-row-reverse">
-                                        <div class="col-md-5 pass-titles">
-                                            <label for="current_pass">كلمة السر الحالية</label>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <input type="password" id="current_pass" class="password-input"
-                                                name=" current passowrd" autocomplete="off">
-                                          
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="row flex-row-reverse">
-                                        <div class="col-md-5 pass-titles">
-                                            <label for="New_pass">كلمة السر الجديدة </label>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <input type="password" id="New_pass" class="password-input"
-                                                name="new passowrd" autocomplete="off">
-                                           
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="row flex-row-reverse">
-                                        <div class="col-md-5 pass-titles">
-                                            <label for="New_pass_reenter">تأكيد كلمة السر الجديدة </label>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <input type="password" id="New_pass_reenter" class="password-input"
-                                                name="new passowrd reenter" autocomplete="off">
-                                           
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer password-save-button-row" id="passowrd-save">
-                        <button type="submit" class="btn password-btn-custom ">حفظ</button>
-                    </div>
-
-                </form>
-            </div>
-        </div>
-    </div>
+  
     <!-- feed modal -->
     <div class="modal fade" id="FeedModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
