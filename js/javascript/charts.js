@@ -40,19 +40,26 @@ var myChart1 = new Chart(barChart1, {
     scales: {
       x: {
         grid: {
-          display: false // Remove vertical lines
+          display: false
         },
         ticks: {
           font: {
-            size: 10 // Change the font size of the tick labels
+            family: "'Cairo', sans-serif",
+            size: 11
           }
         }
       },
       y: {
         grid: {
-          display: false // Remove horizontal lines
+          display: false
         },
         beginAtZero: true,
+        ticks: {
+          font: { 
+            family: "'Cairo', sans-serif",
+            size: 11
+          }
+        }
       }
     },
     layout: {
@@ -65,8 +72,8 @@ var myChart1 = new Chart(barChart1, {
     },
     responsive: true,
     maintainAspectRatio: false,
-    barPercentage: 0.6, // Adjust the width of the bars
-    categoryPercentage: 0.8 // Adjust the width of the bars
+    barPercentage: 0.6, 
+    categoryPercentage: 0.8 
   }
 });
 function getCountByVersion(dataIndex) {
@@ -176,25 +183,31 @@ var myChart = new Chart(barChart2, {
       }
 
     },
-    scales: {
+ scales: {
       x: {
         grid: {
-          display: false // Remove vertical lines
+          display: false
+        },
+        ticks: {
+          font: {
+            family: "'Cairo', sans-serif",
+            size: 11
+          }
         }
       },
       y: {
         grid: {
-          display: false // Remove horizontal lines
+          display: false
         },
         beginAtZero: true,
         ticks: {
-          font: {
-            size: 11 // Change the font size of the tick labels
+          font: { 
+            family: "'Cairo', sans-serif",
+            size: 11
           }
         }
       }
-
-    }
+    },
   }
 });
 
@@ -226,25 +239,31 @@ var chartId = new Chart(chrt, {
         display: false
       }
     },
-    scales: {
+   scales: {
       x: {
         grid: {
-          display: false // Remove vertical lines
+          display: false
+        },
+        ticks: {
+          font: { // <-- Correct placement for X-axis labels
+            family: "'Cairo', sans-serif",
+            size: 11
+          }
         }
       },
       y: {
         grid: {
-          display: false // Remove horizontal lines
+          display: false
         },
         beginAtZero: true,
         ticks: {
-          font: {
-            size: 11 // Change the font size of the tick labels
+          font: { // <-- Correct placement for Y-axis labels
+            family: "'Cairo', sans-serif",
+            size: 11
           }
         }
       }
-
-    }
+    },
   }
 });
 
