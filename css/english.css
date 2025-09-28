@@ -76,16 +76,6 @@ body {
 
 
 /*marquee*/
-.marquee-content {
-  display: flex;
-  flex-wrap: nowrap;
-  animation: marquee 15s linear infinite;
-  white-space: nowrap;
-  gap: 5rem;
-  position: absolute;
-  min-width: 100%;
-}
-
 .marquee-xmark {
   right: auto;
   left: 5px
@@ -110,5 +100,53 @@ body {
   background-position: right .75rem center;
   padding: .375rem 2.25rem .375rem .75rem;
   text-align: left;
+}
+#nextBtn2,
+#prevBtn2 {
+  transform: rotate(180deg);
+}
+#nextBtn3,
+#prevBtn3 {
+  transform: rotate(180deg);
+}
+#nextBtn4,
+#prevBtn4 {
+  transform: rotate(180deg);
+}
+#nextBtn5,
+#prevBtn5 {
+  transform: rotate(180deg);
+}
+.carFilter {
+  background-position: right .75rem center;
+  padding: .375rem 2.25rem .375rem .75rem;
+  text-align: left;
+}
 
+
+#carDetailsModal .modal-content {
+  direction: ltr;
+}
+.reasons{
+  direction: ltr;
+  color: #2c3e50;
+}
+.reasons-dropdown {
+    direction: ltr;
+}
+/*  */
+.contract-section {
+  direction: ltr;
+}
+.contract-label i {
+  margin-left: 0px;
+  margin-right: 5px;
+}
+/*  */
+
+@media (max-width: 991px) {
+  .buttons-container {
+    justify-content: flex-end;
+
+  }
 }
